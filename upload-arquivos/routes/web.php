@@ -9,6 +9,12 @@ Route::get('/', function () {
 
 Route::post('/upload', [UploadController::class, 'upload']);
 
-Route::get('/upload', function () {
-    return view('upload');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/upload', [UploadController::class, 'upload'])->name('upload');
+    // Outras rotas que você quer proteger
 });
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
