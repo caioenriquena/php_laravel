@@ -7,13 +7,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/upload', [UploadController::class, 'upload']);
+
+
+
+
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/upload', [UploadController::class, 'upload'])->name('upload');
-    // Outras rotas que você quer proteger
-});
+    Route::get('/upload', function () {
+        return view('upload');
+    })->name('upload.form');
 
+
+
+    Route::post('/upload', [UploadController::class, 'upload'])->middleware('auth')->name('upload.store');
+
+
+    Route::get('/report', [UploadController::class, 'generateReport'])->name('report.generate');
+
+
+});
 
 Auth::routes();
 

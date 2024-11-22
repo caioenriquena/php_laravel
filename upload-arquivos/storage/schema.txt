@@ -1,0 +1,70 @@
+Tabelas do banco:
+
+Tabela: migrations
+  - id (integer)
+  - migration (character varying)
+  - batch (integer)
+
+Tabela: users
+  - id (bigint)
+  - name (character varying)
+  - email (character varying)
+  - email_verified_at (timestamp without time zone)
+  - password (character varying)
+  - remember_token (character varying)
+  - created_at (timestamp without time zone)
+  - updated_at (timestamp without time zone)
+
+Tabela: password_reset_tokens
+  - email (character varying)
+  - token (character varying)
+  - created_at (timestamp without time zone)
+
+Tabela: sessions
+  - id (character varying)
+  - user_id (bigint)
+  - ip_address (character varying)
+  - user_agent (text)
+  - payload (text)
+  - last_activity (integer)
+
+Tabela: cache
+  - key (character varying)
+  - value (text)
+  - expiration (integer)
+
+Tabela: cache_locks
+  - key (character varying)
+  - owner (character varying)
+  - expiration (integer)
+
+Tabela: jobs
+  - id (bigint)
+  - queue (character varying)
+  - payload (text)
+  - attempts (smallint)
+  - reserved_at (integer)
+  - available_at (integer)
+  - created_at (integer)
+
+Tabela: job_batches
+  - id (character varying)
+  - name (character varying)
+  - total_jobs (integer)
+  - pending_jobs (integer)
+  - failed_jobs (integer)
+  - failed_job_ids (text)
+  - options (text)
+  - cancelled_at (integer)
+  - created_at (integer)
+  - finished_at (integer)
+
+Tabela: failed_jobs
+  - id (bigint)
+  - uuid (character varying)
+  - connection (text)
+  - queue (text)
+  - payload (text)
+  - exception (text)
+  - failed_at (timestamp without time zone)
+
