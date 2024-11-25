@@ -8,6 +8,9 @@
       <sourceFolder url="file://$MODULE_DIR$/upload-arquivos/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/upload-arquivos/tests/Feature" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/upload-arquivos/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/upload-arquivos/spec" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/carbonphp/carbon-doctrine-types" />
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/composer" />
@@ -116,6 +119,24 @@
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/laravel/ui" />
+      <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/league/flysystem-aws-s3-v3" />
+      <excludeFolder url="file://$MODULE_DIR$/upload-arquivos/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/aws/aws-crt-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/aws/aws-sdk-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mtdowling/jmespath.php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
