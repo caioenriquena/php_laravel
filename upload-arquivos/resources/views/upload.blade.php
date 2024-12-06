@@ -29,6 +29,9 @@
             <input type="file" id="file" name="file" required>
             <button type="submit" class="btn-upload">Enviar</button>
         </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="{{ url('/') }}" class="btn" style="padding: 10px 20px; background-color: #f60909; color: white; text-decoration: none; border-radius: 5px;">Voltar para a Página Inicial</a>
+        </div>
     </form>
 </div>
 </body>
